@@ -15,8 +15,8 @@ function Navbar() {
           Checkout
         </Link>
 
-        <Link to="/Listing" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
-          Events
+        <Link to="/tickets" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Booking
         </Link>
 
       </div>

@@ -1,31 +1,30 @@
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Link } from 'react-router-dom';
-
-function Header() {
+function Navbar() {
   return (
-    <header>
-      <nav className="navbar">
-        <div className="logo">EventPass</div>
+    <nav className="Navbar">
+      <h4 className="eventpass">EventPass</h4>
 
-        <div className="nav-links">
-         
-          <Link to="/tickets" style={{ color:'#ccc', textDecoration:'none', cursor:'pointer' }}>
-            Buy Tickets
-          </Link>
-          <a href="#">My Bookings</a>
-          <a href="#">Support</a>
-        </div>
-      </nav>
+      <div className="links">
+        <Link to="/" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Home
+        </Link>
 
-      <nav aria-label="Breadcrumb" className="breadcrumb-container">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item"><a href="#">Home</a></li>
-          <li className="breadcrumb-item"><a href="#">Concerts &amp; Nightlife</a></li>
-          <li className="breadcrumb-item active">Checkout</li>
-        </ol>
-      </nav>
-    </header>
+        <Link to="/Listing" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Events
+        </Link>
+
+        <Link to="/tickets" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Booking
+        </Link>
+
+
+        
+
+      </div>
+    </nav>
   );
 }
 
-export default Header;
+export default Navbar;

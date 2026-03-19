@@ -1,8 +1,8 @@
-import Navbar from "../components/navbar";
-import EventCard from "../components/eventcard";
-import Sidebar from "../components/sidebar";
-import Pagination from "../components/pagination";
-import Footer from "../components/footer";
+import Navbar from "../components/listing/navbar";
+import EventCard from "../components/listing/eventcard";
+import Sidebar from "../components/listing/sidebar";
+import Pagination from "../components/listing/pagination";
+import Footer from "../components/listing/footer";
 
 function Listing(){
   return(

@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../assets/image1.png";
-import img2 from "../assets/image2.png";
-import img3 from "../assets/image 3.png";
-import img4 from "../assets/image 4.png";
-import img5 from "../assets/image 5.png";
-import img6 from "../assets/image 6.png";
+import img1 from "../../assets/images/image1.png";
+import img2 from "../../assets/images/image2.png";
+import img3 from "../../assets/images/image 3.png";
+import img4 from "../../assets/images/image 4.png";
+import img5 from "../../assets/images/image 5.png";
+import img6 from "../../assets/images/image 6.png";
 
 const events = [
   { title: "Neon Midnight", category: "MUSIC", price: "$120.00", rating: "4.9", date: "Oct 14, 2024 · 10:00 PM", location: "Brooklyn Mirage, NY", image: img1, },

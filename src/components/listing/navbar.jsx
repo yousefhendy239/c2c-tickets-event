@@ -1,19 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
-    <div className="navbar">
-      <div className="logo">EventPass</div>
-      <div className="nav-links">
-        <span>Home</span>
-        <span className="active">Events</span>
-        <span>Venues</span>
-        <span>About</span>
+    <nav className="Navbar">
+      <h4 className="eventpass">EventPass</h4>
+
+      <div className="links">
+        <Link to="/" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Home
+        </Link>
+
+        <Link to="/checkoutpage" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Checkout
+        </Link>
+
+        <Link to="/tickets" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
+          Booking
+        </Link>
+
       </div>
-      <div className="nav-right">
-        <input placeholder="Search events..." />
-        <button className="signin">Sign In</button>
-      </div>
-    </div>
+    </nav>
   );
 }
+
 export default Navbar;

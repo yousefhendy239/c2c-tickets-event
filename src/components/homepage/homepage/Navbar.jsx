@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -7,9 +8,10 @@ export default function Navbar() {
 
             <div className="links">
                 <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Browse</a>
-                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Events</a>
-                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Promotions</a>
+                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>sign in</a>
                 <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>My Tickets</a>
+                <Link to="/Listing" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Events</Link>
+                
             </div>
 
             

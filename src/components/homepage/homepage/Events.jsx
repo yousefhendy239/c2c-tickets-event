@@ -25,7 +25,7 @@ const prevSlide = () => {
 };
 const events = [
     {
-        title: "Summer Beats Festival",
+        title: "Summer Beats",
         location: "Los Angeles, CA",
         price: "$45.00",
         img: concertImg,
@@ -91,12 +91,12 @@ const events = [
                 <div className="slider-container" style={{ transform: `translateX(-${index * 25}%)` }}>
                     {events.map((event, i) => (
                     <div key={i} className="card" >
-                        <img  src={event.img} alt="" className="h-44 w-full object-cover"/>
+                        <img  src={event.img} alt="" className="images-card"/>
                         <div className="p-4 ">
                             <h4 className="card-name">{event.title}</h4>
                             <p className="card-name"><i class="fa-solid fa-location-dot"></i> {event.location}</p>
 
-                            <div className="flex justify-between items-center mt-4">
+                            <div className="card-footer">
                                 <div>
                                     <h6 className="start-at">Start At</h6>
                                     <span className="text-purple-400 font-bold">{event.price}</span>

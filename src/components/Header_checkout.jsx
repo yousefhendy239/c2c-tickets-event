@@ -12,9 +12,7 @@ function Navbar() {
           Home
         </Link>
 
-        <Link to="/Listing" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
-          Events
-        </Link>
+        <Link to="/Listing" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Events</Link>
 
         <Link to="/tickets" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>
           Booking

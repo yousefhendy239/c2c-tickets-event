@@ -17,10 +17,10 @@ const events = [
 
 function EventCard() {
   return (
-    <div className="cardholder">
+    <div className="cardholder-listing">
       {events.map((event, index) => (
-        <div className="card" key={index}>
-          <img src={event.image} alt="" />
+        <div className="card-listing" key={index}>
+          <img src={event.image} alt="" className="image-listing"/>
           
           <div className="card-body">
             <div className="top-row">

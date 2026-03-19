@@ -693,16 +693,21 @@ h1 {
 }
 
   
-.cardholder {
+.cardholder-listing {
   width: 100%;
   display: flex;
   flex-wrap: wrap;         
   justify-content: center;  
   gap: 20px;
 }
+.image-listing {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
 
 
-.card {
+.card-listing {
   color: #F3F4F6;
   width: calc(33.33% - 20px);  
   min-width: 250px;         
@@ -712,12 +717,12 @@ h1 {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
+.card-listing:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 30px rgba(168,85,247,0.4);
 }
 
-.card img { width: 100%; display:block; }
+
 
 .card-body { padding: 16px; }
 
@@ -786,12 +791,6 @@ h1 {
 
 
 /* hendy */
-.Navbar {
-    background-color: #1A0F2E  ;
-    display: flex;
-    justify-content: space-around;
-}
-
 /* navbar */
 body {
     font-family: 'Poppins', sans-serif;
@@ -801,14 +800,12 @@ body {
     background-color: #0F0720  ;
     display: flex;
     justify-content:space-around;
-
     align-items: center;
     height: 70px;
 }
 .eventpass{
     color: #A855F7 ;
     font-weight: bold;
-
     padding: 5px 10px;
 }
 .links {
@@ -821,14 +818,14 @@ body {
     display: flex;
     gap: 30px;
 }
-link {
+.link {
 
     color: #F3F4F6;
     text-decoration: none;
 }
 
 
-br {
+.br {
     color: #0F0720;
     background-color: #0F0720;
 }
@@ -838,7 +835,6 @@ br {
     border-radius: 10px #0F0720;
     padding: 5px 10px;
     color: #F3F4F6;
-
     height: 40px;
 
 
@@ -885,6 +881,8 @@ br {
 .event-input {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: #A855F7;
     font-weight: bold;
     gap: 5px;
@@ -893,10 +891,12 @@ br {
 }
 .event-input-words{
     color: #F3F4F6;
+
 }
 .dateselector{
     color: #F3F4F6;
     background-color: #1A0F2E;
+    border: #120c24;
 }
 .search-btn{
     background-color: #A855F7;
@@ -927,6 +927,8 @@ br {
 }
 .button-categories{
     color: #A855F7;
+    background-color: #0F0720;
+    border: none;
 }
 .button-categories:hover{
     color: #F3F4F6;
@@ -940,6 +942,8 @@ br {
 }
 .button-icon{
     transition: scale 0.3s ease;
+    background-color: #0F0720;
+    border: none;
 }
 .button-icon:hover{
     scale: 1.1;
@@ -947,8 +951,6 @@ br {
 .icons{
     color: #F3F4F6;
     background-color: #1A0F2E;
-    padding: 50px;
-    border-radius: 10px;
     height: 120px;
     width: 150px;
     display: flex;
@@ -956,6 +958,8 @@ br {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border-radius: 20px;
+
 }
 .icon-circle{
     color: #A855F7;
@@ -987,8 +991,15 @@ br {
     font-size: 2rem;
     font-weight: bold;
 }
-.arows{
+.arow{
+  color: #F3F4F6;
+    background-color: #1A0F2E;
+    border: none;
+}
+.arow:hover{
     color: #A855F7;
+}
+.arows{
     font-size: 1.5rem;
     display: flex;
     gap: 10px;
@@ -1009,6 +1020,7 @@ br {
     gap: 20px;
     padding: 15px;
     width: 100%;
+    /* border: 2px solid #FBBF24; */
 }
 .slider-wrapper{
     overflow: hidden;
@@ -1027,6 +1039,8 @@ br {
     display: flex;
     flex-direction: column;
     transition: scale 0.3s ease;
+    height: 450px;
+    margin: 20px 0;
 }
 .card:hover{
     scale: 1.05;
@@ -1035,6 +1049,18 @@ br {
 .card-name{
     color: #F3F4F6;
     font-weight: bold;
+}
+.images-card{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F3F4F6;
 }
 .start-at{
     color: #F3F4F6;

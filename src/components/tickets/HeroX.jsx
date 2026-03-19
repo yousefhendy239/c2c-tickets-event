@@ -1,4 +1,4 @@
-import bg from "../../assets/background.jpeg";
+import bg from "../../assets/images/background.jpeg";
 
 export default function HeroX() {
   return (

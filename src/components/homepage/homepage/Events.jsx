@@ -7,6 +7,7 @@ import concertImg4 from "../../../images/image 5.png";
 import concertImg5 from "../../../images/image 6.png";
 import concertImg6 from "../../../images/image1.png";
 import concertImg7 from "../../../images/image2.png";
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 export default function Events() {
@@ -102,7 +103,8 @@ const events = [
                                     <span className="text-purple-400 font-bold">{event.price}</span>
                                 </div>
 
-                                <button className="buy-ticket">Buy Ticket</button>
+                                <Link to="/Home" className="link text-decoration-none" style={{ color: '#F3F4F6' }}><button className="buy-ticket">Buy Ticket</button></Link>
+
                             </div>
                         </div>
                     </div>

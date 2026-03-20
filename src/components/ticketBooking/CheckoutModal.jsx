@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import theme from '../../theme.js';
+import { Link } from "react-router-dom";
+
 
 /* =========================================
    Inject @keyframe animations once into <head>
@@ -121,7 +123,8 @@ const CheckoutModal = ({ isOpen, onClose, total }) => {
         {/* Buttons */}
         <div style={{ display:'flex', gap:'12px', marginTop:'4px' }}>
           <ActionButton variant="secondary" onClick={onClose}>Go Back</ActionButton>
-          <ActionButton variant="primary">Confirm &amp; Pay</ActionButton>
+          <Link to="/checkoutpage" className="link text-decoration-none" style={{ color: '#F3F4F6' }}> <ActionButton variant="primary">Confirm &amp; Pay</ActionButton></Link>
+
         </div>
       </div>
     </div>

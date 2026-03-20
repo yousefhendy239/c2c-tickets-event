@@ -10,7 +10,7 @@ export default function Navbar() {
         color: "#a855f7", fontWeight: 800, fontSize: "20px",
         fontFamily: "'Syne', sans-serif",
       }}>
-        Event<span style={{ color: "#f107a3" }}>Pass</span>
+        Event<span style={{ color: "#a855f7" }}>Pass</span>
       </div>
       <nav style={{ display: "flex", gap: "30px" }}>
         {["Events", "Venues", "My Tickets"].map(item => (

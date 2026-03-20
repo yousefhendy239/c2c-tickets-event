@@ -1,11 +1,12 @@
 import { useState } from "react";
-import Navbar from "../components/tickets/Navbar";
+import Navbar from "../components/homepage/homepage/Navbar";
 import HeroX from "../components/tickets/HeroX";
 import InfogridX from "../components/tickets/InfogridX";
 import Tickets from "../components/tickets/Tickets";
 import Map from "../components/tickets/Map";
 import Summary from "../components/tickets/Summary";
 import Gallery from "../components/tickets/Gallery";
+import Footer from "../components/homepage/homepage/footer";
 
 export default function Home() {
   const [selected, setSelected] = useState(null);
@@ -44,6 +45,7 @@ export default function Home() {
           }} />
         </div>
       )}
+      <Footer />
     </div>
   );
 }

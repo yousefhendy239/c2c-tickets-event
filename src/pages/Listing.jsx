@@ -1,8 +1,8 @@
-import Navbar from "../components/listing/navbar";
+import Navbar from "../components/homepage/homepage/Navbar";
 import EventCard from "../components/listing/eventcard";
 import Sidebar from "../components/listing/sidebar";
 import Pagination from "../components/listing/pagination";
-import Footer from "../components/listing/footer";
+import Footer from "../components/homepage/homepage/footer";
 
 function Listing(){
   return(
@@ -24,7 +24,7 @@ function Listing(){
         </div>
 
       </div>
-
+      <br />
       <Footer />
 
     </div>

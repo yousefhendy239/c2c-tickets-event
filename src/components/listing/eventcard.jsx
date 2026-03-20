@@ -5,6 +5,7 @@ import img3 from "../../assets/images/image 3.png";
 import img4 from "../../assets/images/image 4.png";
 import img5 from "../../assets/images/image 5.png";
 import img6 from "../../assets/images/image 6.png";
+import { Link } from "react-router-dom";
 
 const events = [
   { title: "Neon Midnight", category: "MUSIC", price: "$120.00", rating: "4.9", date: "Oct 14, 2024 · 10:00 PM", location: "Brooklyn Mirage, NY", image: img1, },
@@ -33,7 +34,7 @@ function EventCard() {
             <p className="meta">{event.date}</p>
             <p className="meta">{event.location}</p>
 
-            <button className="buy">Buy Ticket</button>
+            <button className="buy"> <Link to="/Home" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Buy Ticket</Link></button>
           </div>
         </div>
       ))}

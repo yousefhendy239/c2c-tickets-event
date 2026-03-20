@@ -4,17 +4,18 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
     return (
         <nav className="Navbar">
-            <h4 className="eventpass">EventPass</h4>
+            <div><h4 className="eventpass">EventPass</h4></div>
 
             <div className="links">
-                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Browse</a>
-                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>sign in</a>
-                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>My Tickets</a>
+                <Link to="/" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Home</Link>
                 <Link to="/Listing" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Events</Link>
+
+                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Sign in</a>
+                <a href="#" className="link text-decoration-none" style={{ color: '#F3F4F6' }}>Profile</a>
                 
             </div>
 
-            
+            <div>
             <nav className="navbar">
                 <div className="container-fluid">
                     <form className="d-flex" role="search">
@@ -23,7 +24,7 @@ export default function Navbar() {
                     </form>
                 </div>
             </nav>
-            
+            </div>
             
         </nav>
         

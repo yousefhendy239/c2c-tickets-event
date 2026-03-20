@@ -1,13 +1,14 @@
-import Header from "../components/header_checkout"
+
 import CheckoutForm from "../components/CheckoutForm"
 import OrderSummary from "../components/OrderSummary"
-import Footer from "../components/Footer_checkout"
+import Footer from "../components/homepage/homepage/footer"
+import Navbar from "../components/homepage/homepage/Navbar"
 
 function Checkout() {
   return (
     <div className="page">
 
-      <Header />
+      <Navbar />
 
       <div className="checkout-container">
 

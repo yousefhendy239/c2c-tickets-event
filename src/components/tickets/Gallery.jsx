@@ -1,3 +1,8 @@
+import React from 'react';
+import img1 from "../../assets/images/image 3.png";
+import img2 from "../../assets/images/image 4.png";
+import img3 from "../../assets/images/image 5.png";
+import img4 from "../../assets/images/image 6.png";
 export default function Gallery({ onOpen }) {
   return (
     <div style={{
@@ -7,7 +12,7 @@ export default function Gallery({ onOpen }) {
       <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: "16px", marginBottom: "14px" }}>Past Events</h3>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
 
-        <img src="/standard.jpeg" onClick={() => onOpen("/standard.jpeg")} style={{
+        <img src={img1} onClick={() => onOpen(img1)} style={{
           width: "100%", height: "140px", objectFit: "cover",
           borderRadius: "12px", cursor: "pointer", transition: "transform 0.25s",
           gridColumn: "1", gridRow: "1",
@@ -16,7 +21,7 @@ export default function Gallery({ onOpen }) {
           onMouseLeave={e => e.target.style.transform = "scale(1)"}
         />
 
-        <img src="/vip.jpeg" onClick={() => onOpen("/vip.jpeg")} style={{
+        <img src={img2} onClick={() => onOpen(img2)} style={{
           width: "100%", height: "110px", objectFit: "cover",
           borderRadius: "12px", cursor: "pointer", transition: "transform 0.25s",
         }}
@@ -24,7 +29,7 @@ export default function Gallery({ onOpen }) {
           onMouseLeave={e => e.target.style.transform = "scale(1)"}
         />
 
-        <img src="/premium.jpeg" onClick={() => onOpen("/premium.jpeg")} style={{
+        <img src={img3} onClick={() => onOpen(img3)} style={{
           width: "100%", height: "110px", objectFit: "cover",
           borderRadius: "12px", cursor: "pointer", transition: "transform 0.25s",
         }}
@@ -40,7 +45,7 @@ export default function Gallery({ onOpen }) {
           border: "1px dashed rgba(168,85,247,0.3)", position: "relative",
           overflow: "hidden",
         }}>
-          <img src="/other.jpeg" style={{
+          <img src={img4} style={{
             position: "absolute", inset: 0, width: "100%", height: "100%",
             objectFit: "cover", opacity: 0.4,
           }} />

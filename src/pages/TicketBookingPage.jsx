@@ -5,13 +5,13 @@
 import React, { useState } from 'react';
 import theme from '../theme.js';
 
-import Navbar              from '../components/ticketBooking/Navbar.jsx';
+import Navbar              from '../components/homepage/homepage/Navbar.jsx';
 import EventHero           from '../components/ticketBooking/EventHero.jsx';
 import TicketSelector      from '../components/ticketBooking/TicketSelector.jsx';
 import AttendeeForm        from '../components/ticketBooking/AttendeeForm.jsx';
 import TicketOrderSummary  from '../components/ticketBooking/TicketOrderSummary.jsx';
 import CheckoutModal       from '../components/ticketBooking/CheckoutModal.jsx';
-import Footer              from '../components/ticketBooking/Footer.jsx';
+import Footer              from '../components/homepage/homepage/footer.jsx';
 
 /* =========================================
    Static ticket data
